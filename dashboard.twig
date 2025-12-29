@@ -1,0 +1,18 @@
+{% extends 'base.twig' %}
+{% block content %}
+<h2>Dashboard</h2>
+<div class="stats">
+  <div>Total Tickets: {{ tickets|length }}</div>
+  <div>Open Tickets: {{ tickets|filter(t => t.status == 'open')|length }}</div>
+  <div>Resolved Tickets: {{ tickets|filter(t => t.status == 'closed')|length }}</div>
+</div>
+<a href="/tickets">Manage Tickets</a>
+<button id="logout">Logout</button>
+
+<script>
+document.getElementById('logout').addEventListener('click', () => {
+  localStorage.removeItem('ticketapp_session');
+  window.location.href = '/auth/login';
+});
+</script>
+{% endblock %}
