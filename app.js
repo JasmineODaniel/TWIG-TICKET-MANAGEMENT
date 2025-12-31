@@ -8,6 +8,6 @@ document.getElementById('login-form').addEventListener('submit', function(e){
     localStorage.setItem('ticketapp_session', 'token123');
     window.location.href = '/dashboard'; 
   } else {
-    document.getElementById('toast').innerText = 'Invalid credentials';
+    document.getElementById('toast').innerText = 'Invalid credentials'; 
   }
 });
