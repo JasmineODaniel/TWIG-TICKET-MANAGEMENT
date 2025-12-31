@@ -3,7 +3,7 @@ document.getElementById('create-ticket').addEventListener('submit', function(e){
   const title = this.title.value.trim();
   const status = this.status.value;
 
-  if(!title){ 
+  if(!title){  
     alert('Title is required'); return;  
   }
   if(!['open','in_progress','closed'].includes(status)){
