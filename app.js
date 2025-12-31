@@ -4,7 +4,7 @@ document.getElementById('login-form').addEventListener('submit', function(e){
   const password = this.password.value;
 
   // Simulated authentication 
-  if(email === 'user@test.com' && password === '123456'){
+  if(email === 'user@test.com' && password === '123456'){ 
     localStorage.setItem('ticketapp_session', 'token123');
     window.location.href = '/dashboard'; 
   } else {
