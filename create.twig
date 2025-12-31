@@ -11,7 +11,7 @@ document.getElementById('create-ticket').addEventListener('submit', function(e){
   }
 
   let tickets = JSON.parse(localStorage.getItem('tickets') || '[]');
-  tickets.push({id: Date.now(), title, status, description: this.description.value});
+  tickets.push({id: Date.now(), title, status, description: this.description.value}); 
   localStorage.setItem('tickets', JSON.stringify(tickets));
   window.location.href = '/tickets';
 });
