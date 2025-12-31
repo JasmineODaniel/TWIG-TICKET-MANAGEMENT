@@ -1,7 +1,7 @@
 document.getElementById('login-form').addEventListener('submit', function(e){
   e.preventDefault();
   const email = this.email.value;
-  const password = this.password.value;
+  const password = this.password.value; 
 
   // Simulated authentication 
   if(email === 'user@test.com' && password === '123456'){ 
