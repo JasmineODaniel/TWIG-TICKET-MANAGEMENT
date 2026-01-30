@@ -6,7 +6,7 @@
   <div>Open Tickets: {{ tickets|filter(t => t.status == 'open')|length }}</div>
   <div>Resolved Tickets: {{ tickets|filter(t => t.status == 'closed')|length }}</div> 
 </div> 
-<a href="/tickets">Manage Tickets</a> 
+<a href="/tickets">Manage Tickets</a>  
 <button id="logout">Logout</button>
  
 <script>
