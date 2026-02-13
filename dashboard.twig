@@ -1,6 +1,6 @@
 {% extends 'base.twig' %}
 {% block content %}  
-<h2>Dashboard</h2>
+<h2>Dashboard</h2> 
 <div class="stats"> 
   <div>Total Tickets: {{ tickets|length }}</div>
   <div>Open Tickets: {{ tickets|filter(t => t.status == 'open')|length }}</div> 
