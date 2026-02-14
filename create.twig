@@ -5,7 +5,7 @@ document.getElementById('create-ticket').addEventListener('submit', function(e){
 
   if(!title){  
     alert('Title is required'); return;   
-  }
+  } 
   if(!['open','in_progress','closed'].includes(status)){
     alert('Status must be open, in_progress, or closed'); return; 
   }
